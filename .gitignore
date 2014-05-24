@@ -1,5 +1,4 @@
 _site/
-*.lock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
