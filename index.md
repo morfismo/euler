@@ -7,7 +7,7 @@ tagline: projecteuler.net
 
 hola
 
-{% gist e9bc06d7b79aa3dc275d %}
+{% gist proposicion47/e9bc06d7b79aa3dc275d %}
 
 adios
 ## Entradas:
