@@ -12,4 +12,4 @@ tagline: projecteuler.net
   {% endfor %}
 </ul>
 
-
+{% gist e9bc06d7b79aa3dc275d}
