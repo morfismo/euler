@@ -1,7 +1,7 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
-markdown : kramdown
+markdown : redcarpet
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 
@@ -80,18 +80,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
-    disqus :
-      short_name : profedrini
-    #livefyre :
-    #  site_id : 123
-    #intensedebate :
-    #  account : 123abc
-    #facebook :
-    #  appid : 123
-    #  num_posts: 5
-    #  width: 580
-    #  colorscheme: light
+    provider : false
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.

@@ -5,14 +5,16 @@ tagline: projecteuler.net
 ---
 {% include JB/setup %}
 
-hola
+{% highlight julia linenos %}
+for k in range(1000000):
+	EsPrimo(k)
+{% endhighlight %}
 
-{% gist proposicion47/e9bc06d7b79aa3dc275d %}
 
-adios
 ## Entradas:
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
