@@ -6,10 +6,32 @@ tagline: projecteuler.net
 {% include JB/setup %}
 
 {% highlight julia linenos %}
-for k in range(1000000):
-	EsPrimo(k)
+function EsPrimo(n)
+	MX=1000
+	if (n <= MX) # Si el número es menor o igual que MX
+		if (n in ListaPrimos)  # Basta con verificar pertenencia
+			return true
+		else
+			return false
+		end   
+	elseif (MX < n) &&  (n<=MX*MX)  # Si el número está entre MX y MX^2
+		for p in ListaPrimos
+			( n%p == 0 ) && return false  # Si alguno divide, no es primo
+			( p>n*n) && return true
+		end
+		return true
+	else
+		println("Fuera de Rango!", MX, n, MX*MX)
+		return false
+	end
+end
+
+
 {% endhighlight %}
 
+$$x^2 + y^2 = z^2$$
+
+$$\sqrt{\cos{\pi x}}$$.
 
 ## Entradas:
 <ul class="posts">
